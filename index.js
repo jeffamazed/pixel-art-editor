@@ -38,7 +38,7 @@ function historyUpdateState(state, action) {
 const startState = {
   tool: "draw",
   color: "#000000",
-  picture: Picture.empty(120, 60, "#f0f0f0"),
+  picture: Picture.empty(100, 50, "#f0f0f0"),
   done: [],
   doneAt: 0,
 };
@@ -48,8 +48,8 @@ const baseTools = { draw, line, fill, rectangle, circle, pick };
 const baseControls = [
   ToolSelect,
   ColorSelect,
-  SaveButton,
   OpenButton,
+  SaveButton,
   UndoButton,
 ];
 
