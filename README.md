@@ -13,6 +13,10 @@ A simple pixel art editor built with JavaScript that lets you draw, erase, fill,
   - `Ctrl+Z` or `Cmd+Z`: Undo
   - Hotkeys for tool selection (first letter of the tool name)
 
+## Live Demo
+
+Try it online: **[Pixel Art Editor Live](https://jeffamazed.github.io/pixel-art-editor/)**
+
 ## Getting Started
 
 ### Run Locally
@@ -20,7 +24,7 @@ A simple pixel art editor built with JavaScript that lets you draw, erase, fill,
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/yourusername/pixel-art-editor.git
+   git clone https://github.com/jeffamazed/pixel-art-editor.git
    cd pixel-art-editor
    ```
 
