@@ -57,9 +57,9 @@ function rectangle(start, state, dispatch) {
   return drawRectangle;
 }
 
-function circle(pos, state, dispatch) {
+function circle(start, state, dispatch) {
   function drawCircle(to) {
-    let radius = Math.sqrt((to.x - pos.x) ** 2 + (to.y - pos.y) ** 2);
+    let radius = Math.sqrt((to.x - start.x) ** 2 + (to.y - start.y) ** 2);
     let radiusC = Math.ceil(radius);
     let drawn = [];
 
@@ -68,8 +68,8 @@ function circle(pos, state, dispatch) {
         let distSq = dy ** 2 + dx ** 2;
         if (distSq > radius ** 2) continue;
 
-        let y = pos.y + dy,
-          x = pos.x + dx;
+        let y = start.y + dy,
+          x = start.x + dx;
         if (
           y < 0 ||
           y >= state.picture.height ||
